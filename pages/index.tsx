@@ -30,7 +30,7 @@ export default function Home() {
   } = useAppContext();
 
   return (
-    <Box as="form" h={"100vh"} w={"full"}>
+    <Box as="form" onSubmit={submit} h={"100vh"} w={"full"}>
       <Center h={"full"} w={"full"}>
         <Card w={{ base: "80%", md: "50%", lg: "30%" }}>
           <CardHeader>
@@ -109,7 +109,6 @@ export default function Home() {
             <Button
               type="submit"
               disabled={loading}
-              onClick={submit}
               colorScheme={"green"}
               variant={"ghost"}
               w={"full"}
