@@ -1,11 +1,8 @@
 
 ## Getting Started
 
-First, install all packages and dependencies:
-```bash
-npm install
-```
-Run the development server:
+
+To rum development sever run:
 ```bash
 npm run dev
 ```
@@ -16,8 +13,8 @@ datasource db {
   ...
 }
 ```
-Before migrating update the DATABASE_URL environment variable
-To migrate the database schema run the following:
+Before migrating update the DATABASE_URL environment variable,
+to migrate the database schema run:
 ```bash
 npm run prisma:migrate dev
 ```
