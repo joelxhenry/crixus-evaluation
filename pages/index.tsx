@@ -98,7 +98,7 @@ export default function Home() {
                 <Text>Current User</Text>
                 <Text>{user.id}</Text>
                 <Text>{user.username}</Text>
-                <Text>{new Date(user.created_at).toLocaleDateString()}</Text>
+                <Text>{new Date(user.created_at).toLocaleString()}</Text>
               </HStack>
             ) : (
               <></>
