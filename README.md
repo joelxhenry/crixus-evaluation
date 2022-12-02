@@ -2,7 +2,7 @@
 ## Getting Started
 
 
-To rum development sever run:
+To run development sever run:
 ```bash
 npm run dev
 ```
