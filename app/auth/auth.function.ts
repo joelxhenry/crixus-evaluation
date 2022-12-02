@@ -15,10 +15,6 @@ const validator = (username: string, password: string) => {
     return createError[500](
       "Your password is too long (do not exceed 16 characters)"
     );
-  if (!password.trim().match(/^(?=.*[a-z])(?=.*[A-Z])$/))
-    return createError[500](
-      "Your password must have atleast 1 uppercase and 1 lowercase character"
-    );
 };
 
 export const register = async (username: string, password: string) => {
